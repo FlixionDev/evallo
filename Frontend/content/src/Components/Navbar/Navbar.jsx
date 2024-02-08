@@ -16,8 +16,8 @@ export default function Navbar() {
     }
   return (
     <Grid bgcolor={'black'} sx={{display:'flex',justifyContent:"space-between",alignItems:"center",fontSize:"18px",fontFamily:"sans-serif"}} p={1} >
-        <Link style={{color:"white",textDecoration:"none"}} to='/'>All content</Link>
-        <Link style={{color:"white",textDecoration:"none"}} to='/postcontent'>Post A content</Link>
+        <Link style={{color:"white",textDecoration:"none"}} to='/'> <Button variant="outlined" sx={{color:'white'}}>All content</Button></Link>
+        <Link style={{color:"white",textDecoration:"none"}} to='/postcontent'> <Button variant="outlined" sx={{color:'white'}}>Post A content</Button></Link>
         {
             isLogin ? <Button variant="outlined" sx={{color:'white'}} onClick={handleClick}>Sign out</Button> : 
             //  <Link to={"/login"}><Button variant="outlined">Sign in</Button></Link>

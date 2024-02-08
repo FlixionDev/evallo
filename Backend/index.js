@@ -5,8 +5,11 @@ const {isLogin}=require("./middleware/isLogin.middleware")
 const { db } = require("./Configs/db")
 const { userRouter } = require("./Routes/User.Routes")
 const {contentRouter}=require("./Routes/Content.Routes")
+const fs=require("fs")
+const morgan = require('morgan')
 app.use(express.json())
 app.use(cors());
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 app.get("/", (req, res) => {
     res.send({ "message": "Home" })
 })
