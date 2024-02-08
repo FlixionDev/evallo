@@ -22,7 +22,7 @@ export default function SignUp() {
     const nav=useNavigate();
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`http://localhost:3000/user/register`, {
+        fetch(`https://evallobackend.onrender.com/user/register`, {
             method: "POST",
             body: JSON.stringify(state),
             headers: {

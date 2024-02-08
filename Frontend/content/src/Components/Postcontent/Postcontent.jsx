@@ -23,7 +23,7 @@ export default function Postcontent() {
     const nav = useNavigate();
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`http://localhost:3000/content/add`, {
+        fetch(`https://evallobackend.onrender.com/content/add`, {
             method: "POST",
             body: JSON.stringify(state),
             headers: {

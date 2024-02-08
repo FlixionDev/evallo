@@ -34,7 +34,7 @@ export default function Allcontent() {
         fetchData();
     }, [])
     const fetchData = () => {
-        fetch('http://localhost:3000/content', {
+        fetch('https://evallobackend.onrender.com/content', {
             headers: {
                 Authorization: localStorage.getItem("token")
             }
