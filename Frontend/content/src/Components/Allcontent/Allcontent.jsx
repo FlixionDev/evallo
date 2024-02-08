@@ -76,7 +76,7 @@ export default function Allcontent() {
         </TableBody>
       </Table>
     </TableContainer>
-        : "No content published"
+        : <h1 style={{color:"red",margin:'auto',padding:"20px"}}>No content published</h1>
     }
         
     </Grid>
